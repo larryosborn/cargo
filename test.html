@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" charset="utf-8" src="cargo.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        console.log('Initially foo is ' + Cargo('foo') + '.');
+        console.log('Setting foo to "bar".');
+        Cargo('foo','bar');
+        console.log('Now foo is "' + Cargo('foo') + '".');
+        console.log('Unsetting foo.');
+        Cargo('foo', null);
+        console.log('Now foo is ' + Cargo('foo') + '.');
+    </script>
+</head>
+<body>
+</body>
+</html>
